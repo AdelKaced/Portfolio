@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/* APply to all page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Apply to the header*/
+header {
+  background-color: black;
+  height:80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  position: fixed;
+  background: #fff;
+  left: 0%;
+  top: 80px;
+  padding: 150px;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  transition: ease-out 1s;
+  list-style: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 20px
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+header ul li a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+  color: #111;
+}
+
+
+header .logo {
+  color:white;
+  /* margin-bottom: 50px; */
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/*  */
+.toggle {
+  width: 40px;
+  height: 40px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png');
+  filter: invert(1);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  cursor: pointer;
+}
+
+.toggle-active {
+  filter: invert(1); /*revert allow revert color of picture*/
+  width: 40px;
+  height: 40px;
+  background: url('https://cdn3.iconfinder.com/data/icons/ui-icons-5/16/cross-small-01-512.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  cursor: pointer;
+}
+
+/* hide mene when clicking on button */
+.hide {
+  left: -100%;
+}
+
+
+/* Apply for desktop screen*/
+
+@media screen and (min-width: 600px) {
+  header {
+    background-color: white;
+    color: black
+  }
+ .toggle {
+   display: none
+ }
+ .menu{
+   flex: 2;
+   width: auto; /* remove width */
+   height: auto;
+   top:auto;
+   position: relative;
+   font-size: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:15px;
+ }
+
+ .menu li {
+  padding-left: 30px;
+ }
+
+
+
+
+}
+
+
+
+/* 
+@media screen and (max-width:400px) {
+  .logo {
+    display: none;
+  }
+} */
