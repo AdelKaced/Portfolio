@@ -14,28 +14,119 @@
   </head>
   <body>
     <header class="sticky">
-      <a href="#" class="logo">Porfolio</a>
+      <a href="#" class="logo">My Portfolio</a>
       <div class="toggle"></div>
-
       <ul class="menu">
         <li><a href="#home">Home</a></li>
-        <li><a href="#presentation">Who I'am </a></li>
+        <li><a href="#presentation">About me </a></li>
         <li><a href="#skills">My Skills</a></li>
-        <li><a href="#experiences">My Experiences</a></li>
+        <li><a href="#experiences">My Projects</a></li>
         <li><a href="#goal">My Goal</a></li>
         <li><a href="#contact">Contact Me</a></li>
-
       </ul>
     </header>
-    <section class="banner">
-      <p>Here I wlill place a big banner to get</p>
+    <section id="presentation" class="banner">
+      <h1>About Me</h1>
+      <div class="presentation">
+        <div class="general-presentation">
+          <div class="photo"></div>
+          <h2>Adel Kaced</h2>
+          <h3>Web Develloppeur</h3>
+          <a
+            href="https://drive.google.com/file/d/1UpZ4Ahy6s-nAXcbaP9e5IYFftT49GXWN/view?usp=sharing"
+            target="_blank"
+            class="my-cv"
+            >MON CV
+          </a>
+        </div>
+        <p>As a Front Web Developer I'm specialised on React JS</p>
+      </div>
     </section>
-    <section class="presentation"></section>
-    <section class="competences"></section>
-    <section class="experiences"></section>
-    <section class="mysearch"></section>
-    <section class="contact"></section>
+    <section class="skills">
+      <h1>My skills</h1>
+      <div class="my-skills">
+        <div class="skills-card">
+          <div class="html-css-img">
+            <img class="html" src="/img/html5.jpeg" alt="html" />
+            <img class="css" src="/img/css.jpeg" alt="css" />
+          </div>
+          <h3>HTML CSS</h3>
+          <p>
+            HTML & CSS has no secret for me and I'm still improving myself at
+            each project
+          </p>
+        </div>
+        <div class="skills-card">
+          <img class="react-logo" src="/img/react.png" />
+          <h3>React JS</h3>
+          <p>
+            I choose to specialised in React Framework for it flexibility and
+            performance
+          </p>
+        </div>
+        <div class="skills-card">
+          <img class="node" src="/img/node.png" />
+          <h3>Node JS</h3>
+          <p>
+            Thanks to Express frameWork I managed the routes to communicate with
+            the database
+          </p>
+        </div>
+        <div class="skills-card">
+          <img class'html' src='/img/sql.jpeg'>
+          <h3>SQL</h3>
+          <p>SQL is essential to query the database</p>
+        </div>
+      </div>
+    </section>
+    <section class="project">
+      <h1>My Projects</h1>
 
+      <div class="content">
+        <div class="workBx">
+          <a
+            href="https://dashing-florentine-6f4bf3.netlify.app/"
+            target="_blank"
+          >
+            <img src="./img/impr-ecran-geo.png" />
+          </a>
+          <p>
+            Learn about Country's flags and Test your knowledge by doing the
+            quizz on React world
+          </p>
+        </div>
+        <div class="workBx">
+          <a href="https://google.com" target="_blank">
+            <img src="./img/photoprojet.png" />
+          </a>
+          <p>
+           Comming soon...
+          </p>
+        </div>
+        <div class="workBx">
+          <a href="https://google.com" target="_blank">
+            <img src="./img/photoprojet.png" />
+          </a>
+          <p>
+            Comming soon...
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="search" class="search">
+      <div class="heading">
+        <h1>My search</h1>
+        <p>Looking for a long term contract as Front Developper in React</p>
+      </div>
+      <div class="testimonialBx">
+        <p>
+          Im building website whith React JS and Redux and learn about back end firebase and Node.
+          Available immediatly for job which meet my requirement.
+        </p>
+        <h3>Adel Kaced <br /><span>Web developer</span></h3>
+      </div>
+    </section>
+    <section class="contact"></section>
     <script src="index.js"></script>
   </body>
 </html>

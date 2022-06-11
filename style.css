@@ -7,23 +7,26 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  font-size: 15px;
 }
 
 /* Apply to the header*/
 header {
+  position: fixed;
+  padding: 30px 0;
+  width: 100%;
   background-color: black;
-  height:80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  height: 95px;
+  vertical-align: center;
+  z-index: 1;
 }
 
 .menu {
-  position: fixed;
+  position: relative;
   background: #fff;
   left: 0%;
-  top: 80px;
+  top: 30px;
   padding: 150px;
   z-index: 10;
   height: 100vh;
@@ -32,7 +35,8 @@ header {
   list-style: none;
   font-weight: 500;
   letter-spacing: 1px;
-  font-size: 20px
+  font-size: 20px;
+  display: block;
 }
 
 .menu li {
@@ -46,19 +50,19 @@ header ul li a {
   color: #111;
 }
 
-
 header .logo {
-  color:white;
-  /* margin-bottom: 50px; */
+  color: white;
   font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 2px;
+  white-space: nowrap;
 }
 
 /*  */
 .toggle {
+  float: right;
   width: 40px;
   height: 40px;
   background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png');
@@ -69,6 +73,7 @@ header .logo {
 }
 
 .toggle-active {
+  float: right;
   filter: invert(1); /*revert allow revert color of picture*/
   width: 40px;
   height: 40px;
@@ -83,41 +88,300 @@ header .logo {
   left: -100%;
 }
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 100px;
+  background: url('./img/road.png');
+  background-size: cover;
+  z-index: 10;
+}
 
-/* Apply for desktop screen*/
+ h1 {
+  text-align:center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom:20px
+}
+.banner h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+.banner h3 {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 500;
+}
+.presentation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-@media screen and (min-width: 600px) {
-  header {
-    background-color: white;
-    color: black
-  }
- .toggle {
-   display: none
- }
- .menu{
-   flex: 2;
-   width: auto; /* remove width */
-   height: auto;
-   top:auto;
-   position: relative;
-   font-size: 16px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding:15px;
- }
+.presentation p {
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 300;
+  width: 250px;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+.photo {
+    background-image: url(./img/picture_me.png);
+    background-repeat: no-repeat;
+    background-position: 80% 10%;
+    width: 150px;
+    height: 150px;
+    background-size: 100% auto;
+    background-image: linear-gradient(to bottom, rgba(98, 171, 226, 0.3), rgba(33, 36, 53, 0.3)), url(./img/picture_me.png);
+    border-radius: 10em;
+    transition: 0.5s;
+  
+}
+.photo:hover{
+   transform: scale(1.2);
+}
+/* .photo:hover:hover >*{
+  transform: rotate(30deg);
+} */
+.my-cv {
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 15px;
+  padding: 8px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500px;
+}
 
- .menu li {
-  padding-left: 30px;
- }
+.my-cv:hover{
+  border: solid whitesmoke 2px;
+  /* transform: rotate(30deg); */
+}
+
+.general-presentation{
+  text-align:center
+}
+
+.skills{
+  padding: 50px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 
 
+.my-skills{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
+.skills-card{
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  color: rgb(255, 255, 255);
+  padding: 20px 20px;
+  background: rgb(34, 34, 34);
+  margin: 5px;
+  transition: all 0.5s ease 0s; 
+}
+.skills-card:hover{
+  background: rgb(33, 150, 243);
+}
+.my-skills img{
+  max-width: 80px;
+}
+.skills-card p{
+  margin-top: 30px;
+  text-align: center
+}
+
+.html-css-img{
+  white-space: nowrap;
+}
+
+
+.react-logo{
+  animation: App-logo-spin infinite 20s linear;
+}
+
+
+.project {
+  background: rgb(34, 34, 34);
+  color: white;
+  padding-top: 20px;
+}
+
+
+.project .content{
+  padding: 50px;
+  display:flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.workBx{
+
+  width: 300px;
+  height: 300px;
+
+
+  /* color: #111111;
+  margin:10px;
+  background : white;
+  width: 300px;
+  height: 300px;
+  box-shadow:   2px -2px 2px 2px rgb(78, 85, 105); */
+
+} 
+
+.workBx img {
+  /* border: solid grey 2px; */
+  width: 100%;
+  height: 200px;
+  border-radius: 1em;
+  box-shadow: 0 0 10px 5px rgb(128, 128, 134);
+
+}
+
+.workBx p {
+ text-align: justify;
+ margin-top: 0.7em;
+}
+
+.search {
+  padding-top: 20px;
+  padding: 40px 20px;
+  margin: 10px;
+}
+.search .heading{
+  text-align: center;
+
+}
+.search .testimonialBx {
+  max-width: calc(100% - 20px);
+  padding: 40px 20px;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 300;
+  background: #2196f3;
+  text-align: justify;
+
+}
+
+.testimonialBx h3{
+  margin-top:20px;
+  text-align: right;
+}
+.search .testimonialBx h3 span{
+  font-size: 14px;
+  font-weight: 400;
+}
+.heading p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
 
 }
 
 
 
+/* ----- Apply for desktop screen ----- */
+
+@media screen and (min-width: 800px) {
+  *{
+    font-size: 16px
+  }
+  header {
+    display: flex;
+    width: 100%;
+    padding:20px 0;
+    height: auto;
+    background-color: white;
+    color: black;
+  }
+  .toggle {
+    display: none;
+  }
+  .hide {
+    left: 0%;
+  }
+
+  header .logo {
+    color: black;
+  }
+  .menu {
+    /* position: relative; */
+    width: 100%; /* remove width */
+    height: auto;
+    top: auto;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .menu li{
+    padding-left: 30px;
+  }
+  .presentation p{
+    max-width: 800px;
+  }
+  .photo{
+    width:200px;
+    height: 200px;
+    }
+
+  .header{
+    background-color: none;
+
+}
+
+.skills{
+  align-content: space-around;
+  align-items:initial;
+  
+}
+
+.my-skills{
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.presentation p {
+  width: 600px;
+}
+
+/* .skills-card{
+height: 400px;
+} */
+}
+
+@media screen and (min-width: 1000px) {
+  .presentation p {
+    width: 1000px;
+  }
+  
+
+  /* .skills-card{
+    height: 350px;
+    } */
+}
 /* 
 @media screen and (max-width:400px) {
   .logo {
