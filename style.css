@@ -392,10 +392,10 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
-
+/* 
 .formBx {
   min-width: 60%;
-}
+} */
 .formBx form {
   display: flex;
   flex-direction: column;
@@ -419,6 +419,8 @@ h2 {
   background: #222;
   color: #fff;
   resize: none;
+  width: 100%;
+
 }
 
 .formBx input:focus,
