@@ -32,7 +32,7 @@ header {
   z-index: 10;
   height: 100vh;
   width: 100%;
-  transition: ease-out 1s;
+  transition: ease-out 1s ;
   list-style: none;
   font-weight: 500;
   letter-spacing: 1px;
@@ -40,7 +40,12 @@ header {
   display: block;
 }
 
-.sticky logo {
+/* hide mene when clicking on button */
+.hide {
+  left: -100%;
+}
+
+.sticky .logo {
   color: #111111;
 }
 .menu li {
@@ -104,10 +109,7 @@ header .logo {
 .sticky .toggle-active {
   filter: none;
 }
-/* hide mene when clicking on button */
-.hide {
-  left: -100%;
-}
+
 
 .banner {
   display: flex;

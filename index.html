@@ -14,11 +14,11 @@
     <title>Adel Porfolio</title>
   </head>
   <body>
-    <header >
-      <div class='header-logo'>
-       <h1 class="logo">My Portfolio</h1>
-      <div class="toggle"></div>
-    </div>
+    <header>
+      <div class="header-logo">
+        <h1 class="logo">My Portfolio</h1>
+        <div class="toggle"></div>
+      </div>
       <ul class="menu hide">
         <!-- <li><a href="#home">Home</a></li> -->
         <li><a href="#presentation">About me </a></li>
@@ -62,7 +62,7 @@
           </p>
         </div>
         <div class="skills-card">
-          <img class="react-logo" src="/img/react.png" />
+          <img class="react-logo" src="/img/react.png" alt="react-logo" />
           <h4>React JS</h4>
           <p>
             I choose to specialised in React Framework for it flexibility and
@@ -70,7 +70,7 @@
           </p>
         </div>
         <div class="skills-card">
-          <img class="node" src="/img/node.png" />
+          <img class="node" src="/img/node.png" alt="node-log" />
           <h4>Node JS</h4>
           <p>
             Thanks to Express frameWork I managed the routes to communicate with
@@ -78,7 +78,7 @@
           </p>
         </div>
         <div class="skills-card">
-          <img src="/img/sql.jpeg" />
+          <img src="/img/sql.jpeg" alt="sql-logo" />
           <h4>SQL</h4>
           <p>SQL is essential to query the database</p>
         </div>
@@ -90,7 +90,7 @@
       <div class="content">
         <div class="workBx">
           <a href="https://poetic-figolla-87f5ec.netlify.app" target="_blank">
-            <img src="./img/impr-ecran-geo.png" />
+            <img src="./img/impr-ecran-geo.png" alt="print-shoot-react-world" />
           </a>
           <p>
             Learn about Country's flags and Test your knowledge by doing the
@@ -99,13 +99,13 @@
         </div>
         <div class="workBx">
           <a href="https://google.com" target="_blank">
-            <img src="./img/photoprojet.png" />
+            <img src="./img/photoprojet.png" alt="photo-projet" />
           </a>
           <p>Coming soon...</p>
         </div>
         <div class="workBx">
           <a href="https://google.com" target="_blank">
-            <img src="./img/photoprojet.png" />
+            <img src="./img/photoprojet.png" alt="photo-projet" />
           </a>
           <p>Coming soon...</p>
         </div>
@@ -211,15 +211,13 @@
     <script src="index.js"></script>
     <!-- load our EmailJS SDK -->
     <script
-      type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <!-- we initialize the SDK with our public key -->
-    <script type="text/javascript">
-      (function () {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init('user_De6CgtinIQTtm3Ygioanq');
-      })();
+    >
+      //  we initialize the SDK with our public key
+      // (function () {
+            // https://dashboard.emailjs.com/admin/account
+            // emailjs.init('user_De6CgtinIQTtm3Ygioanq');
+          // })();
     </script>
   </body>
 </html>

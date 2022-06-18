@@ -21,8 +21,6 @@ window.addEventListener('scroll' , () => {
 
 
 
-
-
 window.onload = function () {
   document
     .getElementById('contact-form')
@@ -36,7 +34,7 @@ window.onload = function () {
         user_email: document.getElementById('email').value,
         message: document.getElementById('message').value,
       };
-
+      emailjs.init('user_De6CgtinIQTtm3Ygioanq');
       emailjs
         .send('service_eafpre8', 'template_ahhdjsk', params)
         .then(function (res) {
