@@ -16,10 +16,11 @@ header {
   padding: 30px 0;
   width: 100%;
   background-color: black;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); */
   height: 95px;
   vertical-align: center;
   z-index: 1;
+  transition: 1s all;
 }
 
 .menu {
@@ -39,6 +40,9 @@ header {
   display: block;
 }
 
+.sticky logo {
+  color: #111111;
+}
 .menu li {
   margin: 10px 0;
 }
@@ -59,6 +63,11 @@ header .logo {
   font-weight: 700;
   letter-spacing: 2px;
   white-space: nowrap;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*  */
@@ -84,6 +93,17 @@ header .logo {
   cursor: pointer;
 }
 
+.sticky {
+  background: white;
+}
+.sticky a {
+  color: #111111;
+}
+
+.sticky .toggle,
+.sticky .toggle-active {
+  filter: none;
+}
 /* hide mene when clicking on button */
 .hide {
   left: -100%;
@@ -481,17 +501,21 @@ h2 {
 
 @media screen and (min-width: 800px) {
   * {
-    font-size: 15px;
+    font-size: 16px;
     color: white;
   }
   header {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 20px;
     height: auto;
-    background-color: white;
-    color: black;
+    background-color: #ffffff00;
+    color: white;
+  }
+
+  header ul li a {
+    color: white;
   }
   .toggle {
     display: none;
@@ -499,10 +523,10 @@ h2 {
   .hide {
     left: 0%;
   }
-
+  /* 
   header .logo {
     color: black;
-  }
+  } */
   .menu {
     /* position: relative; */
     width: 100%; /* remove width */
@@ -513,6 +537,7 @@ h2 {
     justify-content: flex-end;
     padding: 0;
     margin-right: 5px;
+    background: none;
   }
 
   .menu li {

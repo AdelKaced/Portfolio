@@ -3,6 +3,8 @@ console.log("it's working");
 const toogle = document.querySelector('.toggle');
 const menu = document.querySelector('.menu');
 
+const header = document.querySelector('header')
+
 // change class of tooggle whenn cliking on it
 toogle.addEventListener('click', () => {
   toogle.classList.contains('toggle')
@@ -12,6 +14,14 @@ toogle.addEventListener('click', () => {
   menu.classList.toggle('hide');
   console.log(menu.classList);
 });
+
+window.addEventListener('scroll' , () => {
+  header.classList.toggle('sticky', window.scrollY > 0)
+})
+
+
+
+
 
 window.onload = function () {
   document
