@@ -1,8 +1,5 @@
-console.log("it's working");
-
 const toogle = document.querySelector('.toggle');
 const menu = document.querySelector('.menu');
-
 const nav = document.querySelector('nav')
 
 // change class of tooggle whenn cliking on it

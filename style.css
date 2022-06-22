@@ -139,7 +139,7 @@
         justify-content: flex-start;
         min-height: 100vh;
         padding-top: 100px;
-        background: url('./img/road.png');
+        background: url('img/road.webp');
         background-size: cover;
         z-index: 10;
     }
