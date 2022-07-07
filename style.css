@@ -613,6 +613,10 @@ h2 {
   .presentation p {
     width: 600px;
   }
+  .email-text {
+    font-size: 16px;
+    overflow: hidden;
+  }
 }
 
 @media screen and (min-width: 1000px) {
