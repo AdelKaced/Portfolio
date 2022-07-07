@@ -9,6 +9,19 @@
   scroll-behavior: smooth;
   font-size: 13px;
 }
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: rgb(249, 251, 255); /* color of the tracking area */
+
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(213, 214, 226); /* color of the scroll thumb */
+  border: 3px solid rgb(206, 206, 206); /* creates padding around scroll thumb */
+
+}
 /* Apply to the nav*/
 
 nav {
@@ -40,6 +53,7 @@ h1 {
   letter-spacing: 1px;
   font-size: 20px;
   display: block;
+  transition: 1.2s all;
 }
 /* hide mene when clicking on button */
 
@@ -547,6 +561,8 @@ h2 {
   font-size: 9px;
   overflow: hidden;
 }
+
+
 /* ----- Apply for desktop screen ----- */
 
 @media screen and (min-width: 800px) {

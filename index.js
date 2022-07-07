@@ -12,6 +12,14 @@ toogle.addEventListener('click', () => {
     console.log(menu.classList);
 });
 
+menu.addEventListener('click', ()=> {
+    menu.classList.toggle('hide');
+})
+
+
+
+
+
 window.addEventListener('scroll', () => {
     nav.classList.toggle('sticky', window.scrollY > 0)
 })
